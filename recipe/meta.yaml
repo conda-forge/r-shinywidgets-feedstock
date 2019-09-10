@@ -1,4 +1,4 @@
-{% set version = '0.4.8' %}
+{% set version = "0.4.9" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/shinyWidgets_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/shinyWidgets/shinyWidgets_{{ version }}.tar.gz
-  sha256: e2afb82cacfc10962b382418e45b620fb7f467126cc5294f3f761004131f92e8
+  sha256: 949145f9cc124126f5f9548eab0ae77d1d92c4bdec38a5f9b60b4293f0c6b5fb
 
 build:
   merge_build_host: True  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
