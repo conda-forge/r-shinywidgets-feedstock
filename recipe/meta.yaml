@@ -47,6 +47,9 @@ about:
   summary: Collection of custom input controls and user interface components for 'Shiny' applications.  Give
     your applications a unique and colorful style !
   license_family: GPL3
+  license_file:
+    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+    - LICENSE
 
 extra:
   recipe-maintainers:
