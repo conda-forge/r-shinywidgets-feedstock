@@ -1,4 +1,4 @@
-{% set version = "0.4.9" %}
+{% set version = "0.5.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/shinyWidgets_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/shinyWidgets/shinyWidgets_{{ version }}.tar.gz
-  sha256: 949145f9cc124126f5f9548eab0ae77d1d92c4bdec38a5f9b60b4293f0c6b5fb
+  sha256: ebfd17bc1db3f8503126cc349541e15e3f905e5e05bd55d637dc843a84333c84
 
 build:
   merge_build_host: True  # [win]
@@ -47,6 +47,9 @@ about:
   summary: Collection of custom input controls and user interface components for 'Shiny' applications.  Give
     your applications a unique and colorful style !
   license_family: GPL3
+  license_file:
+    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+    - LICENSE
 
 extra:
   recipe-maintainers:
