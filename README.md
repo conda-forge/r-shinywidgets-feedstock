@@ -5,7 +5,7 @@ Home: https://github.com/dreamRs/shinyWidgets
 
 Package license: GPL-3.0-only
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Collection of custom input controls and user interface components for 'Shiny' applications.  Give your applications a unique and colorful style !
 
