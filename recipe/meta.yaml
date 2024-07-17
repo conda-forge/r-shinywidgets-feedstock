@@ -1,6 +1,5 @@
 {% set version = "0.8.6" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-shinywidgets
@@ -13,8 +12,7 @@ source:
   sha256: 863c245891953795c50f3998d5b17335c5f2a0de9fe902ec6081f53c2e5f60b7
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
