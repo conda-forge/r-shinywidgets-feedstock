@@ -24,7 +24,6 @@ requirements:
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
-    - r-anytime
     - r-bslib
     - r-htmltools >=0.5.1
     - r-jsonlite
@@ -33,7 +32,6 @@ requirements:
     - r-shiny >=1.6.0
   run:
     - r-base
-    - r-anytime
     - r-bslib
     - r-htmltools >=0.5.1
     - r-jsonlite
